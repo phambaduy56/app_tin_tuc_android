@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2f4079"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/imageback_edit"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"/>
+
+
+    <TextView
+        android:text="THÔNG TIN"
+        android:textSize="32dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="64dp">
+        <ImageView
+            android:src="@drawable/nguoidung"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+       <EditText
+           android:id="@+id/edittext_name_edit"
+           android:layout_gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:src="@drawable/gmail"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <EditText
+            android:id="@+id/edittext_email_edit"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:src="@drawable/phone"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <EditText
+            android:id="@+id/edittext_sdt_edit"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/CHINHSUA"
+            android:text="CHỈNH SỬA"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2f4079"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:id="@+id/imageback"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"/>
+
+    <ImageView
+        android:id="@+id/imgEdit"
+        android:layout_gravity="right"
+        android:src="@drawable/pencil"
+        android:layout_marginRight="20dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"/>
+
+        <TextView
+            android:text="THÔNG TIN CÁ NHÂN"
+            android:textSize="32dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="64dp">
+        <ImageView
+            android:src="@drawable/nguoidung"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/textviewName"
+            android:text="name"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:src="@drawable/gmail"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/textviewEmail"
+            android:text="Email"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:src="@drawable/phone"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/textviewSDT"
+            android:inputType="number"
+            android:text="SĐT"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/dangxuat"
+            android:text="Đăng Xuất"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

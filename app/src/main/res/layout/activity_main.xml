@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarDsthelaoi"
+                app:title="Sports news"
+                android:background="#BC5B44"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+            </androidx.appcompat.widget.Toolbar>
+
+            <ListView
+                android:id="@+id/listviewArticles"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"></ListView>
+        </LinearLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_gravity="start"
+            android:layout_width="300dp"
+            android:layout_height="match_parent">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+           <LinearLayout
+               android:id="@+id/linear1"
+               android:background="#BC5B44"
+               android:layout_width="match_parent"
+               android:layout_height="?attr/actionBarSize">
+
+               <ImageView
+                   android:id="@+id/imgTheLoai"
+                   android:layout_marginLeft="10dp"
+                   android:src="@drawable/home"
+                   android:layout_width="55dp"
+                   android:layout_height="55dp"/>
+
+               <TextView
+                   android:id="@+id/trangchu"
+                   android:text="Trang chủ"
+                   android:layout_gravity="center"
+                   android:layout_toRightOf="@+id/imgTheLoai"
+                   android:textSize="25dp"
+                   android:textStyle="bold"
+                   android:textColor="@color/black"
+                   android:layout_marginLeft="20sp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+           </LinearLayout>
+
+             <TextView
+                 android:id="@+id/theloai"
+                 android:layout_below="@+id/linear1"
+                 android:textSize="25dp"
+                 android:layout_toRightOf="@+id/imgtheloai"
+                 android:textColor="#CF0404"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginLeft="20dp"
+                 android:text="Thể loại"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
+
+             <ImageView
+                 android:id="@+id/imgtheloai"
+                 android:src="@drawable/theloai"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginLeft="8dp"
+                 android:layout_below="@+id/linear1"
+                 android:layout_width="32dp"
+                 android:layout_height="32dp"/>
+
+             <ListView
+                 android:id="@+id/listViewDanhSachTheLoai"
+                 android:layout_below="@+id/theloai"
+                 android:layout_width="match_parent"
+                 android:layout_height="450dp">
+             </ListView>
+
+             <View
+                 android:background="@color/black"
+                 android:layout_marginTop="20dp"
+                 android:layout_below="@+id/listViewDanhSachTheLoai"
+                 android:layout_width="match_parent"
+                 android:layout_height="0.2dp"/>
+
+             <ImageView
+                 android:id="@+id/imguser"
+                 android:src="@drawable/user"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginLeft="8dp"
+                 android:layout_below="@+id/listViewDanhSachTheLoai"
+                 android:layout_width="32dp"
+                 android:layout_height="32dp"/>
+
+             <TextView
+                 android:id="@+id/txtthongtinuser"
+                 android:text="Thông tin"
+                 android:gravity="center|left"
+                 android:layout_below="@+id/listViewDanhSachTheLoai"
+                 android:textSize="25dp"
+                 android:textColor="#CF0404"
+                 android:layout_marginTop="20dp"
+                 android:layout_toRightOf="@+id/imguser"
+                 android:layout_marginLeft="20dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="32dp"/>
+
+         </RelativeLayout>
+
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

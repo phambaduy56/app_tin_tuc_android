@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#BC5B44"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarhome"
+            app:title="Sports news"
+            android:background="#BC5B44"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+        </androidx.appcompat.widget.Toolbar>
+
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Home">
+
+            <TextView
+                android:id="@+id/textViewNameArticleHome"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:text="Name Article"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textViewDateTimeHome"
+                android:layout_below="@+id/textViewNameArticleHome"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textViewAuthorHome"
+                android:layout_below="@+id/textViewNameArticleHome"
+                android:layout_toRightOf="@+id/textViewDateTimeHome"
+                android:text="Author"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textViewDesciptionHome"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textViewAuthorHome"
+                android:text="Desciption"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/imageViewHome2"
+                android:layout_width="500dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/textViewDesciptionHome"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/imageViewHome2"
+                android:text="Ảnh mô tả"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textViewContentArticleHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/textView5"
+                android:layout_marginTop="10dp"
+                android:text="noi dung" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#BC5B44"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonWriteCmt"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="false"
+            android:text="Viết bình luận....."
+            android:textColor="@color/black"
+            app:backgroundTint="#BC5B44"
+            android:drawableLeft="@drawable/pencil"
+            />
+
+        <Button
+            android:id="@+id/buttonReadCmt"
+            android:text="Bình luận"
+            android:textColor="@color/black"
+            app:backgroundTint="#BC5B44"
+            android:layout_width="fill_parent"
+            android:drawableLeft="@drawable/messenger"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
